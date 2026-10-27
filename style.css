@@ -1,0 +1,91 @@
+/* Configuracion General */
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(110deg, #186625, #3f1f10);
+}
+
+/* Encabezado */
+header{
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+    text-align: center;    
+    border-bottom: #f5f5f5 solid 2px;
+
+}
+
+header h1{
+    color: #168b24;
+    text-shadow: 1px 1px 2px #39e0e0;
+    font-size: 34px;
+    margin: 0;
+}
+
+header p{
+    color: #4f4c47;
+    font-size: 16px;
+}
+
+nav {
+    background: linear-gradient(rgb(230, 214, 172));
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #168b24;
+    text-shadow: 1px 1px 2px #39e0e0;
+    margin: 5px;
+    padding: 12px 18px;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.patrones{
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(231, 17, 17);
+    border-radius: 15px;
+}
+
+.galeria {
+    columns: 4;
+    column-gap: 20px;
+}
+
+.tarjeta{
+    background-color: rgb(248, 255, 255);
+    margin-bottom: 15px;
+    border-radius: 15px;
+    overflow: hidden;/*sirve para ocultar cualquier contenido que sobresalga de los limites de un elemento*/
+    break-inside: avoid;/*evita que las tarjetas se dividan en varias columnas*/
+    transition: transform 0.3s ease;/*sirve para suavisar clics al presionar un boton o hipervinculo*/
+}
+
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+footer{
+    background-color: #222;
+    color: #fff;
+    text-align: center;    
+    padding: 25px;
+    margin: 30px;
+}
+
+footer p{
+    margin: 5px;
+}
